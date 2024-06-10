@@ -15,7 +15,7 @@ body {
     background-image: url("assets/images/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: max(1300px, 100vw);
     height: 700px;
     position: relative;
 }
@@ -331,4 +331,164 @@ footer> :nth-child(4) {
     font-size: 14px;
     font-weight: 400;
     margin: 20px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    .sections {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+    .fourth {
+        flex-direction: column-reverse;
+    }
+
+    .sec-image>img {
+        margin: 40px 0px;
+    }
+
+    .sec-image video {
+        top: 130px;
+        right: 82px;
+    }
+
+    .download-animation {
+        bottom: 68px;
+    }
+
+    .third video {
+        top: 90px;
+        right: 100px;
+    }
+
+    .faqbox {
+        max-width: 90vw;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox div {
+        font-size: 18px;
+    }
+
+    .faqbox img {
+        height: 35px;
+    }
+
+    .watch>:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .main input {
+        padding: 14px 120px 14px 14px;
+    }
+
+    .sec-image>img {
+        width: 400px;
+        top: 50px;
+    }
+
+    .sec-image video {
+        height: 166px;
+        top: 152px;
+        right: 54px;
+    }
+
+    .download-animation {
+        bottom: 2px;
+        left: 40px;
+    }
+
+    .third video {
+        height: 140px;
+        top: 126px;
+        right: 76px;
+    }
+
+    .watch input {
+        padding: 14px 120px 14px 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main input {
+        padding: 14px 60px 14px 14px;
+    }
+
+    .sec-image>img {
+        width: 300px;
+        top: 50px;
+    }
+
+    .sec-image video {
+        height: 124px;
+        top: 138px;
+        right: 40px;
+    }
+
+    .download-animation {
+        bottom: 0px;
+        left: 6px;
+        width: 250px;
+    }
+
+    .third video {
+        height: 104px;
+        top: 118px;
+        right: 60px;
+    }
+
+    .watch input {
+        padding: 14px 60px 14px 14px;
+    }
+
+    .download-animation>:first-child>img {
+        height: 50px;
+    }
 }
