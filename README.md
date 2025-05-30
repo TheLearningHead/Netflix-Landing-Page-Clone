@@ -1,4 +1,4 @@
-# Netflix Clone
+# Netflix Landing Page Clone
 
 This project is a responsive clone of the Netflix India landing page. It is built using HTML and CSS, mimicking the design and layout of the original website. The clone includes a navigation bar, a hero section, multiple informational sections, a FAQ section, and a footer.
 
